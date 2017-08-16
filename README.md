@@ -5,6 +5,28 @@
     USAGE:
             echoerr [exitcode] <echo text...>
 
+### Examples
+
+    $ echoerr 1 Pretty standard stuff
+    Pretty standard stuff
+    $ echo $?
+    1
+
+    $ echoerr 2 Something more interesting
+    Something more interesting
+    $ echo $?
+    2
+
+    $ echoerr 128 "Standard shell stuff" even vars: $PATH
+    Standard shell stuff even vars: /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+    $ echo $?
+    128
+
+    $ echoerr No exit code 
+    No exit code
+    $ echo $?
+    1
+
 ### Installation
 
 For gophers:
