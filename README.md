@@ -13,7 +13,8 @@ For gophers:
 
 For Darwin (OSX):
 
-    curl -o ~/bin/echoerr https://github.com/buildertools/echoerr/releases/download/v1.0/echoerr-darwin64
+    curl -L -o ~/bin/echoerr https://github.com/buildertools/echoerr/releases/download/v1.0/echoerr-darwin64
+    chmod a+x ~/bin/echoerr
 
 ### LICENSE
 
